@@ -55,6 +55,15 @@ nav {
   background-color: var(--nav-color);
 }
 
+.github{
+  color: black;
+}
+
+.github:hover,
+.github:focus{
+  color: rgba(0,0,0,0.8);
+}
+
 
 .container p h1,
 .container p h3{
