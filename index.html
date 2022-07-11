@@ -1,0 +1,669 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/37fd7cc6b1.js" crossorigin="anonymous"></script>
+  <title>cpattern.io</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+    <div class="container-fluid">
+    <a class="navbar-brand mx-1" href="#"><img src="images/dots-circular-shape.png" alt="" width="25" height="25">
+    cpattern.io</a>
+    <div class="icons d-flex align-items-center">
+      <a href="#" id="btn-nav" class="mb-0 text-light bg-dark py-1 px-2 rounded text-decoration-none border-0 mx-2" data-bs-toggle="tooltip" data-bs-placement="left"
+        data-bs-custom-class="custom-tooltip"
+        title="this link will open a new page">tweet</a>
+      <i class="fa-brands fa-github mx-2" style="font-size: 1.5rem;"></i>
+      <!-- <img id="sun-icon" class="mx-3" src="images/sun.png" alt="" width="25" height="25" style="cursor:pointer;"> -->
+      <!-- switch -->
+      <!-- <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label> -->
+    </div>
+  </nav>
+
+  <!-- text -->
+    <div class="container mt-8rem">
+      <p><h1 class="txt-bold">
+        Add beautifull paterns in your projects with ease.
+      </h1>
+        <h3 class="txt-light mt-3">
+          Build your projects faster. No more complicated css.
+        </h3>
+      </p>
+      <div id="buttons" class="buttons d-flex align-items-center justify-content-center my-5">
+        <a href="#" class="btn btn-shadow mx-2 border-0 text-light py-1 px-2 rounded bg-warning" id="all" data-filter="waves">all</a>
+        <a href="#" class="btn btn-shadow mx-2 border-0 text-light py-1 px-2 rounded" id="waves" data-filter="waves">waves</a>
+        <a href="#" class="btn btn-shadow mx-2 border-0 text-light py-1 px-2 rounded" id="circles" data-filter="circles">circles</a>
+        <a href="#" class="btn btn-shadow mx-2 border-0 text-light py-1 px-2 rounded" id="flowers" data-filter="flowers">flowers</a>
+        <a href="#" class="btn btn-shadow mx-2 border-0 text-light py-1 px-2 rounded" id="hexagon" data-filter="hexagon">hexagon</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <!-- cards waves -->
+    <div class="d-block container card-container" id="waves">
+      <div class="row row-cols-3">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-0" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+              <!-- <i class="d-none fa-solid fa-eye-slash"></i> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-1" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-2" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-3" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-4" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-5" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- cards circles -->
+    <div class="d-block container card-container" id="circles">
+
+      <div class="row row-cols-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-6" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-7" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-8" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-9" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-10" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-11" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- cards flowers -->
+    <div class="d-block container card-container" id="flowers">
+
+      <div class="row row-cols-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-12" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-13" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-14" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-15" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-16" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-17" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- cards hexagon -->
+    <div class="d-block container card-container" id="hexagon">
+
+      <div class="row row-cols-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-18" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-19" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-20" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-21" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-22" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-2 w-100">
+            <div class="img-container overflow-hidden">
+              <img src="/handtinytrans.gif" class="card-img-top patterBackground-23" alt="...">
+            </div>
+            <div class="rounded-bottom card-body bg-card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Card title</h5>
+              <div class="icons d-flex">
+                <div class="tooltip1">
+                  <span id="tooltip1text"></span>
+                  <i class="fa-solid fa-copy mx-2"></i>
+                </div>
+                <div class="tooltip2">
+                  <span id="tooltip2text"></span>
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<section id="msg" class=" p-4 text-white bg-warning mt-8rem w-50 mx-auto rounded-top">
+  <div class="text-center">
+    <span style="font-weight: 800;">Build your projects with ease.</span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start">
+    <section>
+      <div class="container text-center text-md-start">
+        <div class="row pt-4">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-2">
+            <h6 class="text-uppercase fw-bold">cpattern.io</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here you will find all kind of css patterns you can use in your projects to make them pretty and fancy.
+            </p>
+          </div>
+
+          <div class="d-none col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-2">
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Bootstrap Angular</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-2">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Contact</a>
+            </p>
+          </div>
+            <form class="w-50-100 mx-auto">
+              <div class="form-group">
+                <p style="font-weight: bold;font-size:2em; ">Sign up for project updates and get <span class="text-warning">free patterns </span>delivered monthly to your inbox</p>
+                <input type="email" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address">
+              </div>
+              <button type="button" class="btn-form btn-dark my-2 w-100 p-4 mb-3">Send me the patterns</button>
+            </form>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" id="footer-b">Developed By
+      <a class="text-white copyright" href="https://mdbootstrap.com/"
+         >Angelos Economopoulos
+      </a>
+    </div>
+  </footer>
+
+<!-- <i class="fa-solid fa-copyright"></i> -->
+  <script src="app.js"></script>
+</body>
+</html>
