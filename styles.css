@@ -33,10 +33,6 @@
 .categories{
   display: grid;
 }
-/* ::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
-} */
 
 * {
   margin: 0;
@@ -163,7 +159,6 @@ nav {
 }
 
 .card {
-  /* box-shadow: 0 10px 12px rgba(0,0,0,0.1); */
   filter: var(--card-shadow);
 }
 .categories {
@@ -221,7 +216,6 @@ a {
   border-radius: 8px !important;
 }
 
-/*  */
 .tooltip1 {
   position: relative;
   cursor: pointer;
@@ -243,7 +237,6 @@ a {
   padding: 8px 10px;
   border-radius: 20px;
   font-size: 10px;
-  /* display: none; */
 }
 .tooltip1 #tooltip1text::after {
   content: "";
@@ -255,18 +248,11 @@ a {
   background: #000;
   color: #fff;
   transform: rotate(45deg);
-  /* display: none; */
 }
 
 #tooltip1text{
   display: none;
 }
-
-/* #tooltip1text{
-  background-color: rgba(0, 0, 0, 0.921);
-  color: white;
-  /* display: none;
-} */
 
 footer {
   font-size: 0.85rem;
@@ -278,7 +264,6 @@ footer {
   background-color: var(--footer-b-bg-color);
   color: var(--white-color);
 }
-
 
 /* remove svg's bluriness on big screens */
 body{
@@ -302,8 +287,6 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-/* stylize on select */
 ::selection {
     background-color: var(--footer-b-bg-color);
     color:  var(--white-color);

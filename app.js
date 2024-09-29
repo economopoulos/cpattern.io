@@ -1,17 +1,10 @@
 const msg = document.getElementById("msg")
-const wavesContainer = document.getElementById("waves-container")
-const circlesContainer = document.getElementById("circles-container")
 const data = document.querySelector(".categories")
-const categories = data.children
 const cards = document.querySelectorAll(".category")
-const cardsTitle = document.querySelectorAll(".card-title")
-const copyIcons = document.getElementsByClassName("fa-copy")
-const images = document.querySelectorAll(".card-img-top")
 const toolTipCopy = document.querySelectorAll(".tooltip1")
 const tweetBtn = document.getElementById("btn-nav")
-const eyeIcons = document.querySelectorAll('.tooltip2')
+const eyeIcons = document.querySelectorAll(".tooltip2")
 let isVisible = false
-
 
 tweetBtn.addEventListener("click", () => {
   const tweetText =
@@ -185,7 +178,7 @@ const renderCategories = () => {
     a.id = category
     a.textContent = category
     document.getElementById("buttons").append(a)
-    if(a.textContent === 'all'){
+    if (a.textContent === "all") {
       a.classList.add("bg-warning")
     }
   })
@@ -201,13 +194,11 @@ function resetLinks() {
 }
 
 function resetEyeIcons() {
-  // debugger
   const arrOfEyeIcons = Array.from(document.querySelectorAll(".eyeIcon"))
   arrOfEyeIcons.forEach((icon) => {
     icon.classList.remove("fa-eye-slash")
     icon.classList.add("fa-solid", "fa-eye")
   })
-
 }
 
 window.onload = function () {
@@ -234,8 +225,8 @@ window.onload = function () {
       if (item.classList.contains("fa-eye-slash")) {
         console.log("true")
         isVisible = true
-      }else{
-        isVisible=false
+      } else {
+        isVisible = false
       }
     })
   })
@@ -250,10 +241,7 @@ let cardComponent = (id, category, svgFile) => {
   const container = document.createElement("div")
   container.classList.add("d-block", "container", "card-container", "category")
   container.id = category
-  // const containerRow = document.createElement("div")
-  // containerRow.classList.add("row", "row-cols-3")
-  const containerCol = document.createElement("div")
-  containerCol.classList.add()
+  const containerCol = document.createElement("section")
   const card = document.createElement("div")
   card.classList.add("card", "m-2", "w-100")
   const imgContainer = document.createElement("div")
@@ -282,7 +270,6 @@ let cardComponent = (id, category, svgFile) => {
   const toolTipOne = document.createElement("div")
   toolTipOne.className = "tooltip1"
   const spanSVG = document.createElement("span")
-  // spanSVG.textContent = 'copied'
   spanSVG.id = "tooltip1text"
   const spanIcon = document.createElement("i")
   spanIcon.classList.add("fa-solid", "fa-copy", "mx-2")
@@ -291,22 +278,21 @@ let cardComponent = (id, category, svgFile) => {
   toolTipOne.addEventListener("click", () => {
     let svgCode = `background-image: url("${svgFile}")`
     navigator.clipboard.writeText(svgCode)
-    spanSVG.style.display = 'block'
-    setInterval(()=>{
+    spanSVG.style.display = "block"
+    setInterval(() => {
       spanSVG.style.display = "none"
-    },1000)
+    }, 1000)
   })
   const toolTipTwo = document.createElement("div")
   toolTipTwo.className = "tooltip2"
   const eyeSVG = document.createElement("span")
   eyeSVG.id = "tooltip2text"
   const eyeIcon = document.createElement("i")
-  eyeIcon.classList.add("fa-solid", "fa-eye", 'eyeIcon')
+  eyeIcon.classList.add("fa-solid", "fa-eye", "eyeIcon")
   toolTipTwo.appendChild(eyeSVG)
   toolTipTwo.appendChild(eyeIcon)
 
   toolTipTwo.addEventListener("click", () => {
-
     resetEyeIcons()
 
     if (!isVisible) {
@@ -314,11 +300,9 @@ let cardComponent = (id, category, svgFile) => {
       eyeIcon.classList.remove("fa-eye")
       eyeIcon.classList.add("fa-solid", "fa-eye-slash")
       msg.classList.add("bg-dark")
-
-    }else {
-      // debugger
+    } else {
       document.body.style.backgroundColor = `var(--body-color)`
-      document.body.style.backgroundImage = 'none'
+      document.body.style.backgroundImage = "none"
       eyeIcon.classList.remove("fa-eye-slash")
       eyeIcon.classList.add("fa-solid", "fa-eye")
       msg.classList.remove("bg-dark")
@@ -335,8 +319,6 @@ let cardComponent = (id, category, svgFile) => {
   card.appendChild(cardFooter)
   containerCol.appendChild(card)
   data.appendChild(containerCol)
-  // containerRow.appendChild(containerCol)
-  // container.appendChild(containerRow)
   container.appendChild(containerCol)
   data.appendChild(container)
 }
@@ -360,9 +342,5 @@ function comparison(buttonId) {
       card.classList.remove("d-block")
       card.classList.add("d-none")
     }
-    // if (buttonId === "all") {
-    //   card.classList.remove("d-none")
-    //   card.classList.add("d-block")
-    // }
   })
 }
